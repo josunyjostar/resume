@@ -14,11 +14,9 @@ const Container = styled.div`
     line-height: 1.8;
 
     .category {
-      font-weight: 550;
       padding-right: 0.5rem;
     }
     .desc {
-      font-weight: 550;
       padding-right: 0.5rem;
     }
   }
@@ -26,7 +24,6 @@ const Container = styled.div`
 
 function Skills({ data }) {
   const { subject, contents } = data;
-  console.log(contents);
   return (
     <React.Fragment>
       <Container>
@@ -37,7 +34,7 @@ function Skills({ data }) {
             {contents.map((v, i) => {
               return (
                 <div key={i}>
-                  <span className="category">{v.category}</span>
+                  <span className="category strong">{v.category}</span>
                   {v.desc.map((stack, i) => {
                     return (
                       <span key={i} className="desc">

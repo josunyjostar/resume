@@ -13,7 +13,6 @@ const Container = styled.div`
     font-size: 0.9rem;
     li {
       list-style: none;
-      font-weight: 550;
       line-height: 1.8;
       margin-top: 0.3rem;
     }
@@ -28,9 +27,9 @@ function Introduction({ data }) {
         <div className="container">
           <h2 className="subject">{subject}</h2>
           <Hr t={1} b={1} width={80} />
-          <ul className="content">
-            <li>{desc1}</li>
-            <li>{desc2}</li>
+          <ul className="content ">
+            <li className="strong">{desc1}</li>
+            <li className="strong">{desc2}</li>
           </ul>
         </div>
       </Container>

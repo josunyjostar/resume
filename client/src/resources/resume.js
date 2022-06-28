@@ -39,11 +39,93 @@ const skills = {
   ],
 };
 
+const portfolio = {
+  subject: "Portfolio",
+  contents: [
+    {
+      leftSection: {
+        period: "2022.03 - 2022.04",
+        institution: "코드스테이츠",
+        order: "파이널 프로젝트",
+        setup: "(3인/4주)",
+      },
+
+      rightSection: {
+        title: "프로젝트 이름: Budbuddy",
+        subtitle: "한 줄 소개: 반려식물 관리 웹앱",
+        url: "https://budbuddy.click/",
+        github: "https://github.com/codestates/budbuddy",
+        prototype: "https://app.moqups.com/bvuGdqxY3AbobvwrHNKNJZIGfAkDbcW0/view/page/ad64222d5",
+        role: "[팀장,프론트엔드]",
+        skills: "React, Zustand, Styled-Components, Cookie, Jwt",
+        part: "프로젝트에서 맡은 부분 (프론트엔드 기여도 90% 백엔드 기여도 5%)",
+        desc: [
+          {
+            li: "UI 컴포넌트 (DatePicker / 이미지 슬라이드 / 모든 예외처리 모달 / 네비게이션바 / 슬라이드바)",
+            subli: "- 라이브러리를 사용하지 않고 직접 구현",
+          },
+          {
+            li: "게시판 CRUD, 댓글 및 대댓글 구현, 게시판 검색기능",
+            subli: null,
+          },
+          {
+            li: "홈 / 로그인 / 회원가입 / 일지작성 / 일지목록 / 스토리 / 마이페이지를 담당",
+            subli: "- 회원 가입 / 로그인은 백엔드 포함",
+          },
+          {
+            li: "명언 문구 일정 시간 자동 반복 갱신 (setInterval을 선언적으로 사용해 리렌더링 방지)",
+            subli: null,
+          },
+          {
+            li: "쿼리 인코딩하여 페이지 라우팅 (useNavigateSearch hook 사용)",
+            subli: null,
+          },
+        ],
+      },
+    },
+
+    {
+      leftSection: {
+        period: "2022.02 - 2022.02",
+        institution: "코드스테이츠",
+        order: "퍼스트 프로젝트",
+        setup: "(4인/2주)",
+      },
+
+      rightSection: {
+        title: "프로젝트 이름: LolInfo",
+        subtitle: "한 줄 소개: 롤 전적 검색 사이트",
+        url: "https://budbuddy.click/",
+        github: "https://github.com/codestates/budbuddy",
+        prototype: "https://app.moqups.com/bvuGdqxY3AbobvwrHNKNJZIGfAkDbcW0/view/page/ad64222d5",
+        role: "[팀장,프론트엔드]",
+        skills: "React, Redux, Styled-Components, D3.js",
+        part: "프로젝트에서 맡은 부분 (프론트엔드 기여도 30% 백엔드 기여도 10%)",
+        desc: [
+          {
+            li: "전적페이지",
+            subli: null,
+          },
+          {
+            li: "승률 원형 그래프 / 가로 세로 막대 그래프 (d3.js사용)",
+            subli: null,
+          },
+          {
+            li: "Aws 이용한 https 배포",
+            subli: null,
+          },
+        ],
+      },
+    },
+  ],
+};
+
 const data = new Map([
   ["header", header],
   ["contact", contact],
   ["introduction", introduction],
   ["skills", skills],
+  ["portfolio", portfolio],
 ]);
 
 export default data;

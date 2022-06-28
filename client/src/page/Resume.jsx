@@ -4,6 +4,7 @@ import Header from "../component/header/Header";
 import Contact from "../component/contact/Contact";
 import Introduction from "../component/introduction/Introduction";
 import Skills from "../component/skills/Skills";
+import Portfolio from "../component/portfolio/Portfolio";
 
 const Container = styled.div`
   /* width: 990px;
@@ -31,12 +32,10 @@ const Container = styled.div`
     .subject {
       color: ${(props) => props.theme.subjectColor};
     }
-  }
 
-  .portpolio {
-    width: 100%;
-    height: 220px;
-    background-color: #d6ebfd;
+    .strong {
+      font-weight: bold;
+    }
   }
 
   .education {
@@ -65,7 +64,7 @@ function Resume({ data }) {
         <Contact data={data.get("contact")} />
         <Introduction data={data.get("introduction")} />
         <Skills data={data.get("skills")} />
-        <div className="portpolio">portpolio</div>
+        <Portfolio data={data.get("portfolio")} />
         <div className="education">education</div>
         <div className="study">study</div>
         <div className="footer">footer</div>

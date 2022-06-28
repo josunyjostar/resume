@@ -9,7 +9,6 @@ const Container = styled.div`
     font-size: 0.9rem;
     padding-left: 1.5rem;
     li {
-      font-weight: 550;
       line-height: 1.8;
     }
   }
@@ -24,8 +23,8 @@ function Contact({ data }) {
           <h2 className="subject">{subject}</h2>
           <Hr t={1} b={1} width={80} />
           <ul className="content">
-            <li>{`Mobile: ${mobile}`}</li>
-            <li>{`E-mail: ${email}`}</li>
+            <li className="strong">{`Mobile: ${mobile}`}</li>
+            <li className="strong">{`E-mail: ${email}`}</li>
           </ul>
         </div>
       </Container>

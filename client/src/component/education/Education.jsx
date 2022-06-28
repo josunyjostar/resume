@@ -42,7 +42,6 @@ const Container = styled.div`
 
 function Education({ data }) {
   const { subject, contents } = data;
-  console.log(contents);
   return (
     <React.Fragment>
       <Container>

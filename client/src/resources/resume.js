@@ -222,6 +222,11 @@ const education = {
   ],
 };
 
+const study = {
+  subject: "Study",
+  contents: ["인프런 강의 - 자바스크립트 알고리즘 문제풀이(코딩테스트 대비) 총 94문제 (초급알고리즘)"],
+};
+
 const data = new Map([
   ["header", header],
   ["contact", contact],
@@ -229,6 +234,7 @@ const data = new Map([
   ["skills", skills],
   ["portfolio", portfolio],
   ["education", education],
+  ["study", study],
 ]);
 
 export default data;

@@ -6,6 +6,7 @@ import Introduction from "../component/introduction/Introduction";
 import Skills from "../component/skills/Skills";
 import Portfolio from "../component/portfolio/Portfolio";
 import Education from "../component/education/Education";
+import Study from "../component/study/Study";
 
 const Container = styled.div`
   /* width: 990px;
@@ -39,11 +40,6 @@ const Container = styled.div`
     }
   }
 
-  .study {
-    width: 100%;
-    height: 220px;
-    background-color: #5d4037;
-  }
   .footer {
     width: 100%;
     height: 220px;
@@ -61,7 +57,7 @@ function Resume({ data }) {
         <Skills data={data.get("skills")} />
         <Portfolio data={data.get("portfolio")} />
         <Education data={data.get("education")} />
-        <div className="study">study</div>
+        <Study data={data.get("study")} />
         <div className="footer">footer</div>
       </Container>
     </React.Fragment>

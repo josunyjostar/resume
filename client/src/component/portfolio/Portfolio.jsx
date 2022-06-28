@@ -16,7 +16,7 @@ const Container = styled.div`
     padding-top: 1rem;
 
     h3 {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
     }
 
     .left {

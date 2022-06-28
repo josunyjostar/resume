@@ -17,10 +17,33 @@ const introduction = {
     "담당한 업무의 결과물을 다듬는 걸 좋아합니다. 부여된 업무만 마치는 것보다는 어떻게 하면 더 편하게 쓸지 어떻게 하면 같은 팀원들이 이 컴포넌트를 더 쉽게 사용할 수 있을까 하는 능동적인 고민을 하는 것이 본인의 성장에 도움이 된다고 느낍니다.",
 };
 
+const skills = {
+  subject: "Skills",
+  contents: [
+    {
+      category: "[프론트 엔드]",
+      desc: ["React", "HTML", "CSS", "JavaScript", "Zustand", "Redux", "Styled-Components"],
+    },
+    {
+      category: "[백 엔드]",
+      desc: ["Node.js", "Express.js", "Jwt", "Cookie", "Session", "Mysql"],
+    },
+    {
+      category: "[배포]",
+      desc: ["Aws Ec2", "S3", "RDS", "CouldFront", "Route53"],
+    },
+    {
+      category: "[기타]",
+      desc: ["Git (Git hub)", "VS Code"],
+    },
+  ],
+};
+
 const data = new Map([
   ["header", header],
   ["contact", contact],
   ["introduction", introduction],
+  ["skills", skills],
 ]);
 
 export default data;

@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import Header from "../component/header/Header";
 import Contact from "../component/contact/Contact";
+import Introduction from "../component/introduction/Introduction";
+import Skills from "../component/skills/Skills";
 
 const Container = styled.div`
   /* width: 990px;
@@ -12,22 +14,23 @@ const Container = styled.div`
   width: 100%;
   overflow-x: hidden;
 
-  .contact {
-    width: 100%;
-    height: 320px;
-    background-color: #ffe1e4;
-  }
+  .container {
+    width: ${(props) => props.theme.webWidth};
+    height: auto;
+    margin: 0 auto;
+    background-color: ${(props) => props.theme.subColor};
 
-  .introduction {
-    width: 100%;
-    height: 220px;
-    background-color: #fbd6e3;
-  }
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
 
-  .skills {
-    width: 100%;
-    height: 220px;
-    background-color: #ead5ee;
+    padding-left: ${(props) => props.theme.containerPaddingLR};
+    padding-right: ${(props) => props.theme.containerPaddingLR};
+    font-size: ${(props) => props.theme.subjectFontSize};
+
+    .subject {
+      color: ${(props) => props.theme.subjectColor};
+    }
   }
 
   .portpolio {
@@ -60,8 +63,8 @@ function Resume({ data }) {
       <Container>
         <Header data={data.get("header")} />
         <Contact data={data.get("contact")} />
-        <div className="introduction">introduction</div>
-        <div className="skills">skills</div>
+        <Introduction data={data.get("introduction")} />
+        <Skills data={data.get("skills")} />
         <div className="portpolio">portpolio</div>
         <div className="education">education</div>
         <div className="study">study</div>

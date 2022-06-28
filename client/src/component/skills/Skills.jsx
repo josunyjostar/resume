@@ -11,17 +11,22 @@ const Container = styled.div`
 
   .content {
     font-size: 0.9rem;
-    li {
-      list-style: none;
+    line-height: 1.8;
+
+    .category {
       font-weight: 550;
-      line-height: 1.8;
-      margin-top: 0.3rem;
+      padding-right: 0.5rem;
+    }
+    .desc {
+      font-weight: 550;
+      padding-right: 0.5rem;
     }
   }
 `;
 
 function Skills({ data }) {
-  const { subject, desc1, desc2 } = data;
+  const { subject, contents } = data;
+  console.log(contents);
   return (
     <React.Fragment>
       <Container>
@@ -29,8 +34,20 @@ function Skills({ data }) {
           <h2 className="subject">{subject}</h2>
           <Hr t={1} b={1} width={80} />
           <ul className="content">
-            <li>{desc1}</li>
-            <li>{desc2}</li>
+            {contents.map((v, i) => {
+              return (
+                <div key={i}>
+                  <span className="category">{v.category}</span>
+                  {v.desc.map((stack, i) => {
+                    return (
+                      <span key={i} className="desc">
+                        {i !== v.desc.length - 1 ? stack + "," : stack}
+                      </span>
+                    );
+                  })}
+                </div>
+              );
+            })}
           </ul>
         </div>
       </Container>

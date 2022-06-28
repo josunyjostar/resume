@@ -22,7 +22,7 @@ body {
     color: #222; font-size: 10px; line-height: 1.5;
 }
 
-dl, ul, li, ol, menu {
+dl, menu {
     list-style: none;
 }
 

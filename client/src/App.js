@@ -18,7 +18,6 @@ const Layout = styled.div`
 `;
 
 const App = () => {
-  console.log("APP::", data);
   return (
     <React.Fragment>
       <ThemeProvider theme={Theme}>

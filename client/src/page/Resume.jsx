@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Header from "../component/header/Header";
+import Contact from "../component/contact/Contact";
 
 const Container = styled.div`
   /* width: 990px;
@@ -58,7 +59,7 @@ function Resume({ data }) {
     <React.Fragment>
       <Container>
         <Header data={data.get("header")} />
-        <div className="contact">contact</div>
+        <Contact data={data.get("contact")} />
         <div className="introduction">introduction</div>
         <div className="skills">skills</div>
         <div className="portpolio">portpolio</div>

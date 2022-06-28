@@ -4,13 +4,13 @@ const header = {
 };
 
 const contact = {
-  subject: "contact",
-  email: "",
-  blog: "https://",
+  subject: "Contact",
+  email: "parkjeyoung85@gmail.com",
+  mobile: "010-3476-4438",
 };
 
 const introduction = {
-  subject: "introduction",
+  subject: "Introduction",
   desc1:
     "SPA 웹 포트폴리오를 두 번 진행해보았고 팀장의 역할을 맡았습니다. 두 프로젝트 모두 일정 내에 마무리를 지을 수 있도록 책임을 다했습니다. 프론트와 백엔드 모두 흥미를 느끼지만, 프론트엔드에 좀 더 자신감이 있습니다. 특히 UI 컴포넌트 만드는 것을 잘합니다.",
   desc2:

@@ -53,11 +53,11 @@ const Container = styled.div`
   }
 `;
 
-function Resume() {
+function Resume({ data }) {
   return (
     <React.Fragment>
       <Container>
-        <Header />
+        <Header data={data.get("header")} />
         <div className="contact">contact</div>
         <div className="introduction">introduction</div>
         <div className="skills">skills</div>

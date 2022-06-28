@@ -3,6 +3,7 @@ import GlobalStyle from "./styles/GlobalStyle";
 import Theme from "./styles/Theme";
 import styled, { ThemeProvider } from "styled-components";
 import Resume from "./page/Resume";
+import data from "./resources/resume";
 
 const Layout = styled.div`
   display: flex;
@@ -11,17 +12,22 @@ const Layout = styled.div`
 
   width: 100vw;
   height: 100vh;
-  border: none;
+  position: absolute;
+
+  background-color: ${(props) => props.theme.mainColor};
 `;
 
 const App = () => {
+  console.log("APP::", data);
   return (
-    <Layout>
+    <React.Fragment>
       <ThemeProvider theme={Theme}>
         <GlobalStyle />
-        <Resume />
+        <Layout>
+          <Resume data={data} />
+        </Layout>
       </ThemeProvider>
-    </Layout>
+    </React.Fragment>
   );
 };
 

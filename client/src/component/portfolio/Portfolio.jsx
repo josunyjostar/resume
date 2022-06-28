@@ -87,8 +87,8 @@ function Portfolio({ data }) {
                       {r.desc.map((v, i) => {
                         return (
                           <li key={i}>
-                            {v.li}
-                            {v.subli !== null ? <div>{v.subli}</div> : null}
+                            {v.main}
+                            {v.sub !== null ? <div>{v.sub}</div> : null}
                           </li>
                         );
                       })}

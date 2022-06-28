@@ -5,6 +5,7 @@ import Contact from "../component/contact/Contact";
 import Introduction from "../component/introduction/Introduction";
 import Skills from "../component/skills/Skills";
 import Portfolio from "../component/portfolio/Portfolio";
+import Education from "../component/education/Education";
 
 const Container = styled.div`
   /* width: 990px;
@@ -38,12 +39,6 @@ const Container = styled.div`
     }
   }
 
-  .education {
-    width: 100%;
-    height: 220px;
-    background-color: #3e2723;
-  }
-
   .study {
     width: 100%;
     height: 220px;
@@ -65,7 +60,7 @@ function Resume({ data }) {
         <Introduction data={data.get("introduction")} />
         <Skills data={data.get("skills")} />
         <Portfolio data={data.get("portfolio")} />
-        <div className="education">education</div>
+        <Education data={data.get("education")} />
         <div className="study">study</div>
         <div className="footer">footer</div>
       </Container>

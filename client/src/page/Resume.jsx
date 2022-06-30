@@ -1,13 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Header from "../component/header/Header";
-import Contact from "../component/contact/Contact";
-import Introduction from "../component/introduction/Introduction";
-import Skills from "../component/skills/Skills";
-import Portfolio from "../component/portfolio/Portfolio";
-import Education from "../component/education/Education";
-import Study from "../component/study/Study";
-import Footer from "../component/footer/Footer";
+import { Contact, Introduction, Portfolio, Education, Header, Skills, Study, Footer } from "../component";
 
 const Container = styled.div`
   /* width: 990px;

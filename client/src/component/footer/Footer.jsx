@@ -13,12 +13,31 @@ const Container = styled.div`
   padding: 3rem ${(props) => props.theme.containerPaddingLR} 1.5rem ${(props) => props.theme.containerPaddingLR};
 
   font-size: 1.2rem;
+
+  .date {
+    width: 100%;
+    height: 100%;
+    font-size: 0.1rem;
+
+    display: flex;
+    flex-direction: row-reverse;
+
+    > div {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
 `;
 
-function Footer() {
+function Footer({ data }) {
+  const { updated_at } = data;
   return (
     <React.Fragment>
-      <Container></Container>
+      <Container>
+        <div className="date">
+          <div>{updated_at}</div>
+        </div>
+      </Container>
     </React.Fragment>
   );
 }

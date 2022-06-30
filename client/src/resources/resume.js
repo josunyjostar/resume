@@ -1,5 +1,3 @@
-import { version } from "nconf";
-
 const header = {
   name: "박제영",
   desc: "프론트엔드 개발자",
